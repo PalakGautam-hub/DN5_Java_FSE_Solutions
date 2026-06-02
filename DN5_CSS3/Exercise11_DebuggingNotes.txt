@@ -1,0 +1,9 @@
+Exercise 11: Debug and Test with DevTools
+
+1. Opened Chrome DevTools using F12 and inspected the webpage structure.
+2. Used the Device Toolbar to test the portal layout on mobile, tablet, and desktop screen sizes.
+3. Inspected applied CSS styles using the Elements panel and modified properties to observe changes in real time.
+4. Verified that the external stylesheet was loaded successfully using the Network tab.
+5. Used the Console tab to view JavaScript logs and identify script-related issues.
+6. Added breakpoints in JavaScript code and reloaded the page to monitor variable values and execution flow.
+7. Confirmed that the layout remained responsive and all styles were applied correctly across different devices.

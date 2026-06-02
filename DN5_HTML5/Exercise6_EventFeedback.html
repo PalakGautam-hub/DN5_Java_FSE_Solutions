@@ -1,0 +1,37 @@
+<!-- Exercise 6: Event Feedback -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Phone:
+<input type="text"
+       onblur="alert('Phone Validated')">
+
+<br><br>
+
+<select onchange="fee.innerHTML='Fee: ₹500'">
+<option>Select Event</option>
+<option>Workshop</option>
+</select>
+
+<p id="fee"></p>
+
+<img src="images/event.jpg"
+     width="150"
+     ondblclick="this.width=300">
+
+<br><br>
+
+<textarea
+onkeyup="count.innerHTML=this.value.length">
+</textarea>
+
+<p id="count">0</p>
+
+<button onclick="alert('Submitted')">
+Submit
+</button>
+
+</body>
+</html>

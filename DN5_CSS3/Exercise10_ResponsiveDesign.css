@@ -1,0 +1,36 @@
+/* Exercise 10: Responsive Design */
+
+.container{
+
+width:90%;
+
+}
+
+img{
+
+max-width:100%;
+
+}
+
+@media screen and (max-width:768px){
+
+nav{
+
+display:flex;
+flex-direction:column;
+
+}
+
+img{
+
+width:150px;
+
+}
+
+body{
+
+font-size:14px;
+
+}
+
+}

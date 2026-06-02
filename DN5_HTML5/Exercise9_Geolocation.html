@@ -1,0 +1,42 @@
+<!-- Exercise 9: Geolocation -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="findLocation()">
+Find Nearby Events
+</button>
+
+<p id="result"></p>
+
+<script>
+
+function findLocation(){
+
+navigator.geolocation.getCurrentPosition(
+
+(position)=>{
+result.innerHTML=
+position.coords.latitude+
+","+
+position.coords.longitude;
+},
+
+(error)=>{
+alert(error.message);
+},
+
+{
+enableHighAccuracy:true,
+timeout:5000
+}
+
+);
+
+}
+
+</script>
+
+</body>
+</html>

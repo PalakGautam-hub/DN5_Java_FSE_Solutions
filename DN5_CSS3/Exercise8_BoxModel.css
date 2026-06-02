@@ -1,0 +1,27 @@
+/* Exercise 8: Box Model */
+
+.eventCard{
+
+border:2px solid gray;
+padding:20px;
+margin:20px;
+
+}
+
+input:focus{
+
+outline:3px solid orange;
+
+}
+
+.hidden{
+
+visibility:hidden;
+
+}
+
+.none{
+
+display:none;
+
+}

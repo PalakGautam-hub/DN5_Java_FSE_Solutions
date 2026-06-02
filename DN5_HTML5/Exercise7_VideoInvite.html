@@ -1,0 +1,26 @@
+<!-- Exercise 7: Video Invite -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<video controls width="400"
+oncanplay="ready.innerHTML='Video Ready'">
+
+<source src="videos/promo.mp4"
+type="video/mp4">
+
+</video>
+
+<p id="ready"></p>
+
+<script>
+
+window.onbeforeunload=function(){
+return "Unsaved Changes";
+};
+
+</script>
+
+</body>
+</html>

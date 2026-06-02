@@ -1,0 +1,46 @@
+<!-- Exercise 8: Saving User Preferences -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<select id="eventType">
+
+<option>Workshop</option>
+<option>Seminar</option>
+<option>Festival</option>
+
+</select>
+
+<button onclick="save()">
+Save
+</button>
+
+<button onclick="clearData()">
+Clear Preferences
+</button>
+
+<script>
+
+let eventType=document.getElementById("eventType");
+
+eventType.value=
+localStorage.getItem("event")
+|| "Workshop";
+
+function save(){
+localStorage.setItem(
+"event",
+eventType.value
+);
+}
+
+function clearData(){
+localStorage.clear();
+sessionStorage.clear();
+}
+
+</script>
+
+</body>
+</html>
