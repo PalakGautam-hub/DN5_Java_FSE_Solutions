@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling</title>
+</head>
+<body>
+
+<button onclick="registerEvent()">
+Register
+</button>
+
+<br><br>
+
+<select onchange="filterCategory(this.value)">
+    <option>Music</option>
+    <option>Sports</option>
+    <option>Workshop</option>
+</select>
+
+<br><br>
+
+<input
+type="text"
+placeholder="Search Event"
+onkeydown="searchEvent()">
+
+<script src="main.js"></script>
+
+</body>
+</html>
