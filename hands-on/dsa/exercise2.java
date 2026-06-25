@@ -1,3 +1,5 @@
+
+// Product class to store product details
 class Product {
     int productId;
     String productName;
