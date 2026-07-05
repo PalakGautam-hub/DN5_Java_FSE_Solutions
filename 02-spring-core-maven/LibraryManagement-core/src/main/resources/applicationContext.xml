@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- Exercise 1 and 5: Spring IoC container bean configuration -->
+    <bean id="bookRepository" class="com.library.repository.BookRepository"/>
+
+    <!-- Exercise 2: Setter injection -->
+    <!-- Exercise 7: Constructor injection + setter injection -->
+    <bean id="bookService" class="com.library.service.BookService">
+        <constructor-arg ref="bookRepository"/>
+        <property name="bookRepository" ref="bookRepository"/>
+    </bean>
+
+    <!-- Optional AOP logging support -->
+    <bean id="loggingAspect" class="com.library.aspect.LoggingAspect"/>
+    <aop:aspectj-autoproxy/>
+</beans>
