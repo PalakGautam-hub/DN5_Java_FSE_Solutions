@@ -1,0 +1,1 @@
+import{createAction,props}from'@ngrx/store';import{Course}from'../models/course';export const loadCourses=createAction('[Course] Load');export const loadCoursesSuccess=createAction('[Course] Load Success',props<{courses:Course[]}>());export const loadCoursesFailure=createAction('[Course] Load Failure',props<{error:string}>());

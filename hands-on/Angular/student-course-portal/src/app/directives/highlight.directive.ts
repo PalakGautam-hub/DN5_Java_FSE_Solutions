@@ -1,0 +1,1 @@
+import{Directive,ElementRef,Input,OnChanges,Renderer2}from'@angular/core';@Directive({selector:'[appHighlight]',standalone:true})export class HighlightDirective implements OnChanges{@Input()appHighlight=false;constructor(private el:ElementRef,private r:Renderer2){}ngOnChanges(){this.r.setStyle(this.el.nativeElement,'backgroundColor',this.appHighlight?'#e7f7ea':'transparent')}}

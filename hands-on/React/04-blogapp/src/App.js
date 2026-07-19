@@ -1,0 +1,1 @@
+import Posts from './Posts';function App(){return <main className="app"><h1>Blog Posts</h1><Posts/></main>}export default App;

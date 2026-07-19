@@ -1,0 +1,1 @@
+import{Pipe,PipeTransform}from'@angular/core';import{Course}from'../models/course';@Pipe({name:'courseFilter',standalone:true})export class CourseFilterPipe implements PipeTransform{transform(c:Course[],term:string){const q=term.trim().toLowerCase();return!q?c:c.filter(x=>x.name.toLowerCase().includes(q)||x.code.toLowerCase().includes(q))}}

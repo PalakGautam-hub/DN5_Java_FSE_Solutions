@@ -1,0 +1,1 @@
+import ListofPlayers from './ListofPlayers';import IndianPlayers from './IndianPlayers';function App(){const flag=true;return <main className="app"><h1>Cricket App</h1>{flag?<ListofPlayers/>:<IndianPlayers/>}</main>}export default App;

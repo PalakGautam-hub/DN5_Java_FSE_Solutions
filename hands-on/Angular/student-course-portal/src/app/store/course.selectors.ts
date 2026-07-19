@@ -1,0 +1,1 @@
+import{createFeatureSelector,createSelector}from'@ngrx/store';import{CourseState}from'./course.reducer';const f=createFeatureSelector<CourseState>('course');export const selectAllCourses=createSelector(f,s=>s.courses);export const selectCourseLoading=createSelector(f,s=>s.loading);export const selectCourseError=createSelector(f,s=>s.error);

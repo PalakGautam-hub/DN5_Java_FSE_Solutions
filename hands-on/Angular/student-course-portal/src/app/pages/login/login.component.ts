@@ -1,0 +1,1 @@
+import{Component}from'@angular/core';import{Router}from'@angular/router';@Component({standalone:true,template:`<main><h1>Login</h1><button (click)="login()">Login as Student</button></main>`})export class LoginComponent{constructor(private r:Router){}login(){localStorage.setItem('loggedIn','true');this.r.navigateByUrl('/profile')}}

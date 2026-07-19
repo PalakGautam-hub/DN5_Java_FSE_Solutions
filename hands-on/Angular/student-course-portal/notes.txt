@@ -1,0 +1,9 @@
+angular.json - Angular CLI build/serve/test configuration.
+tsconfig.json - Base TypeScript options.
+tsconfig.app.json - Application TypeScript settings.
+package.json - Dependencies and scripts.
+src/main.ts - Entry point.
+src/app/app.config.ts - Standalone providers.
+src/app/app.component.ts - Root component.
+src/index.html - Host page.
+Budgets warn over 500 kB and fail over 1 MB.

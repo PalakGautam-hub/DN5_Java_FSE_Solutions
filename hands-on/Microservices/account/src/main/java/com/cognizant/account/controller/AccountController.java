@@ -1,0 +1,1 @@
+package com.cognizant.account.controller;import java.math.BigDecimal;import org.springframework.web.bind.annotation.*;@RestController public class AccountController{record Account(String number,String type,BigDecimal balance){}@GetMapping("/accounts/{number}")public Account get(@PathVariable String number){return new Account(number,"savings",new BigDecimal("234343"));}}

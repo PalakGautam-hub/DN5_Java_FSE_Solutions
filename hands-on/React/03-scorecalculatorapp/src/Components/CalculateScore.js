@@ -1,0 +1,1 @@
+import '../Stylesheets/mystyle.css';function CalculateScore({Name,School,Total,Goal}){const average=Goal===0?0:Total/Goal;return <div className="score"><h2>Student Score Calculator</h2><p>Name: {Name}</p><p>School: {School}</p><p>Total: {Total}</p><p>Goal: {Goal}</p><p>Average Score: {average.toFixed(2)}</p></div>}export default CalculateScore;

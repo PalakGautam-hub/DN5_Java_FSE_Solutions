@@ -1,0 +1,1 @@
+import CalculateScore from './Components/CalculateScore';function App(){return <main className="app"><CalculateScore Name="Palak Gautam" School="KIIT University" Total={450} Goal={5}/></main>}export default App;

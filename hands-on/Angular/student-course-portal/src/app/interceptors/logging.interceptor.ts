@@ -1,0 +1,1 @@
+import{HttpInterceptorFn}from'@angular/common/http';import{tap}from'rxjs';export const loggingInterceptor:HttpInterceptorFn=(req,next)=>{const t=Date.now();console.log('HTTP',req.method,req.url);return next(req).pipe(tap({next:()=>console.log('Completed',req.url,Date.now()-t),error:e=>console.error(e)}))};

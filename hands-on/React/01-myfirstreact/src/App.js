@@ -1,0 +1,1 @@
+function App(){return <div className="app"><h1>Welcome to the first session of React</h1></div>}export default App;
